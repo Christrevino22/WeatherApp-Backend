@@ -22,10 +22,10 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true } )
 app.use(express.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-//ROUTE TO GET THE HELLO FROM THE BACK END
-// app.get('/', (req,res) => {
-//   res.send("hello from the backend!!")
-// })
+// ROUTE TO GET THE HELLO FROM THE BACK END
+app.get('/', (req,res) => {
+  res.send("hello from the backend!!")
+})
 
 //IMPORT OR USING THE RESERVATION ROUTES FROM THE ROUTES FOLDER
 // const Reservationroute = require('./routes/Reservations')
